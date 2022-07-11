@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Gayathri
+- Font Author: Copyright 2019 The Gayathri Project Authors (https://gitlab.com/smc/fonts/gayathri)
+- Font Source: http://fonts.gstatic.com/s/gayathri/v15/MCoQzAb429DbBilWLIA48J_wBugA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

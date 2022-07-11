@@ -244,7 +244,7 @@ input, select, textarea {
 		}
 
 		h2 {
-			font-size: 1.25em;
+			font-size: 1.25rem;
 			line-height: 1.5;
 		}
 
@@ -1303,9 +1303,13 @@ input, select, textarea {
 		#header .logo {
 			width: 8rem;
 			height: 8rem;
-			line-height: 10rem;
+			/* line-height: 10rem; */
 			border: solid 1px #ffffff;
 			border-radius: 100%;
+		}
+		.logo__img {
+			position: relative;
+			top: 2.56rem;
 		}
 
 			#header .logo .icon:before {
@@ -1343,6 +1347,15 @@ input, select, textarea {
 				letter-spacing: 0.2rem;
 				font-size: 1.2rem;
 				line-height: 2;
+			}
+
+			@media screen and (max-width: 736px){
+				#header .content p {
+					/* text-transform: uppercase; */
+					letter-spacing: 0.2rem;
+					font-size: 1rem;
+					line-height: 1.2;
+				}
 			}
 
 		#header nav ul {
@@ -1453,16 +1466,15 @@ input, select, textarea {
 			#header .logo {
 				width: 5rem;
 				height: 5rem;
-				line-height: 6rem;
-			}		   
-			#header .logo img{
-				/* display:block; */
-				/* margin: 0 auto; */
-				/* object-position: 0rem 1rem; */
-				width: 2.5rem;
-				height: calc(2.5rem*(46/56));
-				/* padding-top: 1.25rem; */
+				/* line-height: 6.8rem; */
 			}
+
+			.logo__img {
+				width: calc(56/128*5rem);
+				position: relative;
+				top: calc((82/128)*2.5rem);
+			}
+
 				#header .logo .icon:before {
 					font-size: 1.75rem;
 				}
