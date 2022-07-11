@@ -1301,9 +1301,9 @@ input, select, textarea {
 			}
 
 		#header .logo {
-			width: 100px;
-			height: 100px;
-			line-height: 136px;
+			width: 8rem;
+			height: 8rem;
+			line-height: 10rem;
 			border: solid 1px #ffffff;
 			border-radius: 100%;
 		}
@@ -1451,11 +1451,18 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
-				/* line-height: 4.75rem; */
+				width: 5rem;
+				height: 5rem;
+				line-height: 6rem;
+			}		   
+			#header .logo img{
+				/* display:block; */
+				/* margin: 0 auto; */
+				/* object-position: 0rem 1rem; */
+				width: 2.5rem;
+				height: calc(2.5rem*(46/56));
+				/* padding-top: 1.25rem; */
 			}
-
 				#header .logo .icon:before {
 					font-size: 1.75rem;
 				}
@@ -1633,19 +1640,19 @@ input, select, textarea {
 
 		}
 
-/* Footer */
-
-	#footer {
-		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-		width: 100%;
-		max-width: 100%;
-		margin-top: 2rem;
-		text-align: center;
-	}
-
+		/* Footer */
+		
+		#footer {
+			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+			width: 100%;
+			max-width: 100%;
+			margin-top: 2rem;
+			text-align: center;
+		}
+		
 		#footer .copyright {
 			letter-spacing: 0.2rem;
 			font-size: 0.6rem;
@@ -1653,7 +1660,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			/* text-transform: uppercase; */
 		}
-
+		
 		body.is-article-visible #footer {
 			-moz-transform: scale(0.95);
 			-webkit-transform: scale(0.95);
@@ -1665,7 +1672,26 @@ input, select, textarea {
 			filter: blur(0.1rem);
 			opacity: 0;
 		}
-
+		
 		body.is-preload #footer {
 			opacity: 0;
+		}
+
+		@media screen and (max-width: 768px) {
+
+			#bg::after {
+				background-image: url("../../images/bg-mob.jpg");
+			}
+			.copyright{
+				display: none;
+			}
+
+		}
+
+		@media screen and (min-width: 768px) {
+
+			.copyright_mob{
+				display: none;
+			}
+
 		}
